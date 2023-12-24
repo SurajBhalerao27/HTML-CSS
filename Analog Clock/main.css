@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    align-self: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;0
+    background: #081b29;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-hours {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    /* background: purple; */
+    border-radius: 50%;
+}
+
+.number-hours span {
+    position: absolute;
+    transform: rotate(calc(var(--index)*30deg));
+    inset: 6px;
+    text-align: center;
+}
+
+.number-hours span p {
+    font: size 52px;
+    color: aquamarine;
+    text-shadow: 0 0 10px #0ef;
+    transform: rotate(calc(var(--index)*-30deg));
+}
+
+.handbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handbox .hand {
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.handbox .hour {
+    width: 320px;
+    height: 320px;
+    border: 2px solid red;
+}
+
+.handbox .hour i {
+    width: 8px;
+    height: 160px;
+    background: red;
+}
+
+.handbox .min {
+    width: 450px;
+    height: 4500px;
+    border: 2px solid yellow;
+}
+
+.handbox .sec {
+    width: 480px;
+    height: 4800px;
+    border: 2px solid white;
+}
